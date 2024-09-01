@@ -90,10 +90,10 @@ private:
 public:
     Moves(Bitboard whiteRooks, Bitboard blackRooks) {
         // castling is legal at the start of games
-        whiteShortCastle = false;
-        whiteLongCastle = false;
-        blackShortCastle = false;
-        blackLongCastle = false;
+        whiteShortCastle = true;
+        whiteLongCastle = true;
+        blackShortCastle = true;
+        blackLongCastle = true;
         
         whiteLeftRook = whiteRooks & -whiteRooks;
         whiteRightRook = whiteRooks ^ whiteLeftRook;
