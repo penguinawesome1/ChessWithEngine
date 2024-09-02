@@ -139,7 +139,7 @@ public:
                                         (blackKnights & END_SQUARE) ? 'n' :
                                         (blackBishops & END_SQUARE) ? 'b' :
                                         (blackRooks & END_SQUARE) ? 'r' :
-                                        (blackQueens & END_SQUARE) ? 'q' : 0;
+                                        (blackQueens & END_SQUARE) ? 'q' :
                                         (BLACK_DID_EN_PASSANT) ? 'E' :
                                         (WHITE_DID_EN_PASSANT) ? 'e' : 0;
         moveData.type1 = CAPTURED_PIECE_TYPE;
