@@ -139,7 +139,7 @@ int main() {
         halfTurns++;
     }
     
-    //begin main game loop playing against engine
+    //begin main game loop playing against player
     while (OPPONENT_TYPE == PLAYER && !evaluate1.gameOver(whiteTurn, moves1, enPassant, whitePawns, whiteKnights, whiteBishops, whiteRooks, whiteQueens, whiteKing, blackPawns, blackKnights, blackBishops, blackRooks, blackQueens, blackKing)) {
         const std::string MOVE = getPlayerMove(whiteTurn, moves1);
         moves1.doMove(MOVE, enPassant, whitePawns, whiteKnights, whiteBishops, whiteRooks, whiteQueens, whiteKing, blackPawns, blackKnights, blackBishops, blackRooks, blackQueens, blackKing);
